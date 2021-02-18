@@ -1,9 +1,11 @@
 class Stock
-  attr_accessor :amount
+  attr_accessor :quantity
 
   def initialize
-    @amount = 0
+    @quantity = 0
   end
 
-
+  def deliver(amount)
+    @quantity +=amount
+  end
 end
